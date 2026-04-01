@@ -162,9 +162,6 @@ async function removeFav(id) {
    }
 }
 
-// =========================
-// LOGOUT FUNCTION
-// =========================
 function logout() {
    localStorage.removeItem("token");
    window.location = "login.html";
