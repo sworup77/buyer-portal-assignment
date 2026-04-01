@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Dashboard - Buyer Portal</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+      <h2>Dashboard</h2>
+      <div id="userInfo"></div>
+      <button onclick="logout()">Logout</button>
+
+      <div id="favourites-container">
+         <input id="property" placeholder="Enter property name" />
+         <button onclick="addFav()">Add</button>
+         <ul id="list"></ul>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+   <script>
+      loadUser();
+      loadFavs();
+   </script>
+</body>
+
+</html>
